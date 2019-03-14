@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Mom Scout Simulator</title>
+    <H1>Mom Scout Simulator</H1>
+
+<!-- this is where the scout banners go -->   
+    <!-- <img id="rightbanner" src="aqoursmom.png">  -->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="momgacha.css">
+    <link href="https://fonts.googleapis.com/css?family=Bilbo" rel="stylesheet"> 
+</head>
+<body>
+
+<form>
+<input class=myButton type="button" value="Reset" onClick="window.location.reload()"></input>
+<input class=myButton type="button" value="Roll!" onClick="simulateRollSingle()"></input>
+<input class=myButton type="button" value="Roll Amount" onClick="simulateRollAmount()"></input>
+<input id=srTicketButton class=myButton type="button" value="SR+ Mode" onClick="srTicketCheck()"></input>
+</form>
+
+
+
+<!-- this is where the kotori audio button goes -->
+<input id="kotoributton" type="image" src="kotoriface.png" value="PLAY"  onclick="play()">
+<audio id="audio" src="Shiny.mp3" ></audio>
+
+<table>     
+    <tr>
+      <th id="DrollSum">Rolls</th>
+      <th><img class= "attributeiconfix" src="Smile.png"></th>
+      <th><img class= "attributeiconfix" src="Cool.png"></th>
+      <th><img class= "attributeiconfix" src="Pure.png"></th>
+      <th><img class= "attributeiconfix" src="Tricolor.png"></th>
+      <th>Total</th>
+    </tr>
+    <tr>
+        <th><img src="UltraRare.png"></th>
+        <th id="DsUR"></th>
+        <th id="DcUR"></th>
+        <th id="DpUR"></th>
+        <th id="DtUR"></th>
+        <th id="DUR"></th>
+    </tr>
+    <tr>
+        <th><img src="SuperRare.png"></th>
+        <th id="DsSR"></th>
+        <th id="DcSR"></th>
+        <th id="DpSR"></th>
+        <th id="DtSR"></th>
+        <th id="DSR"></th>
+    </tr>
+    <tr>
+        <th><img src="Rare.png"></th>
+        <th id="DsR"></th>
+        <th id="DcR"></th>
+        <th id="DpR"></th>
+        <th id="DtR"></th>
+        <th id="DR"></th>
+    </tr>
+    
+  </table>
+
+<!-- this is where the unit toggle goes -->
+  <div class = "toggleicon">
+        
+        <img id="aqours" src="Aqours2.png">
+        <img id="muse" src="Muse2.png">
+        <input type="checkbox" id="switch" autocomplete="off" onClick="check()"/><label for="switch">Toggle</label>
+    
+    </div>
+    
+
+
+<!-- this is where the roll icons go, css fix to center icons due to misalignment from scroll bar-->
+<container id="rollicons">
+
+
+</container>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+<script type= text/javascript src="momgacha.js"></script>
