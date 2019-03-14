@@ -266,7 +266,7 @@ SRrate = 1; //100% of (80%)
 
 
 	function simulateRollAmount() {
-	var input = prompt("Would you like to do a single roll or a 10 Roll? 1-200")
+	var input = prompt("How many times would you like to roll? 1-200")
 	if (input <= 200 && input > 0) {
 	for (i = 0; i < input; i++) {
 	simulateRollDebug();
